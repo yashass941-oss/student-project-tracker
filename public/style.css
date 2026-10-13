@@ -1,1 +1,176 @@
 
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #f3f6fb;
+}
+
+/* Main page content */
+header,
+main {
+  width: 100%;
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #17365d;
+}
+
+header p {
+  margin: 0;
+  color: #4b5563;
+}
+
+/* Form and project list sections */
+section {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #dbe3ed;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  color: #17365d;
+}
+
+/* Form controls */
+#project-form > div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #374151;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  font: inherit;
+  color: #1f2937;
+  background-color: #ffffff;
+  border: 1px solid #aebdce;
+  border-radius: 6px;
+}
+
+input:focus,
+select:focus {
+  border-color: #2459a9;
+}
+
+/* Buttons */
+button {
+  min-height: 44px;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  color: #1f2937;
+  background-color: #e8edf4;
+  border: 1px solid #c5d0df;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#save-button {
+  color: #ffffff;
+  background-color: #1756a9;
+  border-color: #1756a9;
+}
+
+#save-button:hover {
+  background-color: #124483;
+  border-color: #124483;
+}
+
+#cancel-button {
+  margin-left: 8px;
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #e08b00;
+  outline-offset: 3px;
+}
+
+/* Status message and empty project list */
+#message {
+  margin: 16px 0 0;
+  color: #24523a;
+  overflow-wrap: anywhere;
+}
+
+#empty-state {
+  margin: 0 0 12px;
+  color: #5b6573;
+}
+
+#project-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+/* Keep hidden controls hidden */
+[hidden] {
+  display: none !important;
+}
+
+/* Responsive layout for narrow screens */
+@media (max-width: 560px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  section {
+    margin-bottom: 18px;
+    padding: 18px 14px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #cancel-button {
+    margin-top: 8px;
+    margin-left: 0;
+  }
+}
+
